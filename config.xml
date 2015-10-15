@@ -23,4 +23,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <plugin name="cordova-plugin-device-motion" spec="~1.1.1" />
+    <plugin name="cordova.plugin.Brightness" spec="https://github.com/fiscal-cliff/phonegap-plugin-brightness.git" />
 </widget>
