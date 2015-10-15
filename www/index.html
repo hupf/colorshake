@@ -1,0 +1,33 @@
+
+<html>
+  <body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     document.addEventListener('deviceready', onDeviceReady, false);
+
+     function onDeviceReady() {
+       window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
+
+       // Set display to full brightness
+       brightness.setBrightness(1);
+
+       // Ensure screen does not get locked
+       brightness.setKeepScreenOn(true);
+
+       var options = { frequency: 20 };
+       navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+     }
+
+     function onSuccess(acceleration) {
+       var r = Math.round(Math.abs(acceleration.x) / 20 * 255),
+           g = Math.round(Math.abs(acceleration.y) / 20 * 255),
+           b = Math.round(Math.abs(acceleration.z) / 20 * 255);
+       document.body.style.backgroundColor = 'rgb(' + [r, g, b].join(',') + ')';
+     }
+
+     function onError() {
+       // An error happened!
+     }
+    </script>
+  </body>
+</html>
