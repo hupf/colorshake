@@ -1,0 +1,19 @@
+{
+  "name": "colorshake",
+  "version": "1.0.0",
+  "description": "A Cordova demo App that changes the background color depending on accelerator values.",
+  "scripts": {
+    "init": "cordova platform add android",
+    "clean": "rm -rf platforms plugins"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hupf/colorshake.git"
+  },
+  "author": "Mathis Hofer <hofer@puzzle.ch",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/hupf/colorshake#readme",
+  "devDependencies": {
+    "cordova": "^5.3.3"
+  }
+}
