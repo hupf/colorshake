@@ -3,6 +3,13 @@
 A Cordova demo App that changes the background color depending on accelerator values.
 
 
+## Download
+
+Debug build for Android (make sure you allow to install apps from unknown sources):
+
+![QR Code](dist/qrcode.gif)
+
+
 ## How to build the app?
 
 Ensure [Node and NPM are installed](https://docs.npmjs.com/getting-started/installing-node) on your system. Also install the SDK of the mobile platform you want to build the app for, e.g. [Android SDK](https://developer.android.com/sdk/installing/index.html).
